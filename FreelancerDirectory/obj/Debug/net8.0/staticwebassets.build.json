@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "IkhUgoGax5NXq4oOXgIutF6vR8AbYPSKra4W7siZ5Sg=",
+  "Source": "FreelancerDirectory",
+  "BasePath": "_content/FreelancerDirectory",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FreelancerDirectory\\wwwroot",
+      "Source": "FreelancerDirectory",
+      "ContentRoot": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\",
+      "BasePath": "_content/FreelancerDirectory",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\index.html",
+      "SourceId": "FreelancerDirectory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\",
+      "BasePath": "_content/FreelancerDirectory",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wt36tjf0tz",
+      "Integrity": "5LHA9EyhNF9ekdceLsw8qpYqmJt1+qdFqyfKUl/Q0GE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\style.css",
+      "SourceId": "FreelancerDirectory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\",
+      "BasePath": "_content/FreelancerDirectory",
+      "RelativePath": "style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nq30gwouw3",
+      "Integrity": "EV2Ar8eug3evvwpl35JXgJByeIqTUsXBstcuP9PkVmY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5LHA9EyhNF9ekdceLsw8qpYqmJt1+qdFqyfKUl/Q0GE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 14:37:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5LHA9EyhNF9ekdceLsw8qpYqmJt1+qdFqyfKUl/Q0GE="
+        }
+      ]
+    },
+    {
+      "Route": "index.wt36tjf0tz.html",
+      "AssetFile": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5LHA9EyhNF9ekdceLsw8qpYqmJt1+qdFqyfKUl/Q0GE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 14:37:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wt36tjf0tz"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5LHA9EyhNF9ekdceLsw8qpYqmJt1+qdFqyfKUl/Q0GE="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EV2Ar8eug3evvwpl35JXgJByeIqTUsXBstcuP9PkVmY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 14:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EV2Ar8eug3evvwpl35JXgJByeIqTUsXBstcuP9PkVmY="
+        }
+      ]
+    },
+    {
+      "Route": "style.nq30gwouw3.css",
+      "AssetFile": "C:\\Users\\FOO\\source\\repos\\FreelancerDirectory\\FreelancerDirectory\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EV2Ar8eug3evvwpl35JXgJByeIqTUsXBstcuP9PkVmY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 14:37:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nq30gwouw3"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EV2Ar8eug3evvwpl35JXgJByeIqTUsXBstcuP9PkVmY="
+        }
+      ]
+    }
+  ]
+}

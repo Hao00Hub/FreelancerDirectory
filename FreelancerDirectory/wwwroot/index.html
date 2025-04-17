@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Freelancer Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Freelancer Directory</h1>
+
+    <h2>Register / Update User</h2>
+    <form id="userForm">
+        <input type="hidden" id="id" />
+        Username: <input type="text" id="username" /><br>
+        Email: <input type="email" id="mail" /><br>
+        Phone: <input type="text" id="phone" /><br>
+        Skillsets: <input type="text" id="skillsets" /><br>
+        Hobby: <input type="text" id="hobby" /><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>All Users</h2>
+    <button onclick="getUsers()">Refresh List</button>
+    <ul id="userList"></ul>
+
+    <script>
+        //Set API URL
+        const apiUrl = 'https://localhost:44370/api/freelancerdirectory';
+
+        document.getElementById('userForm').addEventListener('submit', async function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+
+            const id = document.getElementById('id').value || 0;
+            const data = {
+                id: parseInt(id),
+                userName: document.getElementById('username').value,
+                mail: document.getElementById('mail').value,
+                phoneNumber: document.getElementById('phone').value,
+                skillsets: document.getElementById('skillsets').value,
+                hobby: document.getElementById('hobby').value
+            };
+
+            const res = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            if (res.ok) {
+                const result = await res.json();
+                alert('User saved!');
+                getUsers(); // Refresh list after saving
+            } else {
+                alert('Error saving user!');
+            }
+        });
+
+        // Get all users
+        async function getUsers() {
+            const res = await fetch(`${apiUrl}/all`);
+            if (res.ok) {
+                const users = await res.json();
+                const list = document.getElementById('userList');
+                list.innerHTML = ''; // Clear the current list
+
+                if (users && users.length > 0) {
+                    users.forEach(user => {
+                        const li = document.createElement('li');
+                        li.textContent = `${user.userName} (${user.skillsets})`;
+
+                        // Delete button
+                        const delBtn = document.createElement('button');
+                        delBtn.textContent = 'Delete';
+                        delBtn.onclick = () => deleteUser(user.id);
+
+                        // Edit button
+                        const editBtn = document.createElement('button');
+                        editBtn.textContent = 'Edit';
+                        editBtn.onclick = () => populateForm(user);
+
+                        li.appendChild(delBtn);
+                        li.appendChild(editBtn);
+                        list.appendChild(li);
+                    });
+                } else {
+                    list.innerHTML = 'No users found.';
+                }
+            } else {
+                alert('Error fetching users!');
+            }
+        }
+
+
+        async function deleteUser(id) {
+            if (!confirm('Are you sure?')) return;
+            const res = await fetch(`${apiUrl}/${id}`, { method: 'DELETE' });
+            if (res.ok) {
+                getUsers(); // Refresh list after deleting
+            } else {
+                alert('Error deleting user!');
+            }
+        }
+        function populateForm(user) {
+            document.getElementById('id').value = user.id;
+            document.getElementById('username').value = user.userName;
+            document.getElementById('mail').value = user.mail;
+            document.getElementById('phone').value = user.phoneNumber;
+            document.getElementById('skillsets').value = user.skillsets;
+            document.getElementById('hobby').value = user.hobby;
+        }
+
+        getUsers();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "FreelancerDirectory.Controllers.FreelancerDirectoryController",
+    "Method": "CreateEdit",
+    "RelativePath": "api/FreelancerDirectory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "FreelancerDirectory.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreelancerDirectory.Controllers.FreelancerDirectoryController",
+    "Method": "Get",
+    "RelativePath": "api/FreelancerDirectory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreelancerDirectory.Controllers.FreelancerDirectoryController",
+    "Method": "Delete",
+    "RelativePath": "api/FreelancerDirectory/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreelancerDirectory.Controllers.FreelancerDirectoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/FreelancerDirectory/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
